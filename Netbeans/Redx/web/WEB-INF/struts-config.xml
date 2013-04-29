@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="loginbean" type="login.loginbean"/>
+    
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="welcome"  path="/Welcome.do"/>
+    </global-forwards>
+
+    <action-mappings>
+        <action input="/" name="loginbean" path="/date" scope="session" type="Android.NewStrutsAction"/>
+        <action input="/" name="loginbean" path="/view" scope="session" type="Android.ViewPro"/>
+        <action input="/" name="loginbean" path="/elig" scope="session" type="Android.Eligibility"/>
+        <action input="/" name="loginbean" path="/searchgps" scope="session" type="Android.DonorGps"/>
+        <action input="/" name="loginbean" path="/gpsinfo" scope="session" type="Android.GpsGet"/>
+        <action input="/" name="loginbean" path="/getgps" scope="session" type="Android.GpsInfo"/>
+        <action input="/" name="loginbean" path="/gpspos" scope="session" type="Android.GpsPos"/>
+        <action input="/" name="loginbean" path="/position" scope="session" type="Android.Position"/>
+        <action input="/" name="loginbean" path="/getpro" scope="session" type="Android.GerPro"/>
+        <action input="/" name="loginbean" path="/getcamp" scope="session" type="Android.DataCamp"/>
+        <action input="/" name="loginbean" path="/getstatecamp" scope="session" type="Android.DataCampState"/>
+        <action input="/" name="loginbean" path="/getcampcity" scope="session" type="Android.DataCampCity"/>
+        <action input="/" name="loginbean" path="/getstate" scope="session" type="Android.DataState"/>
+        <action input="/" name="loginbean" path="/getcity" scope="session" type="Android.DataCity"/>
+        <action input="/" name="loginbean" path="/delallcamp" scope="session" type="Android.DelAllCamp"/>
+        <action input="/" name="loginbean" path="/deluser" scope="session" type="Android.DelUser"/>
+        <action input="/" name="loginbean" path="/delcamp" scope="session" type="Android.DelCamp"/>
+        <action input="/" name="loginbean" path="/deluser.do" scope="session" type="Android.DelUser"/>
+        <action input="/" name="loginbean" path="/updatepro" scope="session" type="Android.UpdaatePro"/>
+        <action input="/" name="loginbean" path="/udcamp" scope="session" type="Android.UpdateCamp"/>
+        <action input="/" name="loginbean" path="/cuser" scope="session" type="Android.CampUser"/>
+        <action input="/" name="loginbean" path="/cstate" scope="session" type="Android.SearchCamps"/>
+        <action input="/" name="loginbean" path="/ccity" scope="session" type="Android.SearchCamp"/>
+        <action input="/" name="loginbean" path="/sstate" scope="session" type="Android.SearchDonors"/>
+        <action input="/" name="loginbean" path="/bdcamp" scope="session" type="Android.BDCamp"/>
+        <action input="/" name="loginbean" path="/scity" scope="session" type="Android.SearchDonor"/>
+        <action input="/index.jsp" name="loginbean" path="/check" scope="session" type="Android.Login"/>
+        <action input="/index.jsp" name="loginbean" path="/register" scope="session" type="Android.Register"/>
+        <action input="/index.jsp" name="loginbean" path="/login" scope="session" type="login.loginaction"/>
+        <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <!-- Header  Starts -->
+        <include layout="@layout/actionbar_layout"/>    
+        <!-- Header Ends -->  
+
+        <!-- Registration Form -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           android:paddingTop="40dip" 
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingBottom="10dip" >
+        
+            <!-- Blood Group Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Group"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/gps_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:entries="@array/bglist" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Meters"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/gps_m"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="100"
+                android:inputType="number" />
+           
+            <!-- Search Button -->
+            <Button
+                android:id="@+id/gps_se"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Search" />
+        <!-- Search Form Ends -->
+        </LinearLayout>
+        <include layout="@layout/footer_layout"/>
+    </RelativeLayout>
+
+</ScrollView>

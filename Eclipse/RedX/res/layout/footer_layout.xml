@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentBottom="true"
+    style="@style/FooterBar" >
+    <TextView         	
+        	android:text="Donate your blood and make a difference.."
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#606060"
+            android:gravity="center"
+            android:paddingTop="10dip"/>
+</LinearLayout>

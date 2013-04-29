@@ -1,0 +1,26 @@
+<com.redx.dev.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+    
+    <Button
+        android:id="@+id/cam_ci"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/citywise"
+        android:text="CityWise Search" />
+ 
+    
+    <Button
+        android:id="@+id/cam_st"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/statewise"
+        android:text="StateWise Search" />
+    <Button
+        android:id="@+id/cam_us"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/usercamp"
+        android:text="User's Camp" />
+ 
+</com.redx.dev.DashboardLayout>

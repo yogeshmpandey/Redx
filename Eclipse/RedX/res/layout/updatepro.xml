@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <!-- Header  Starts -->
+
+        <include
+            layout="@layout/actionbar_layout" />
+        <!-- Header Ends -->
+
+
+        <!-- Registration Form -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="40dip" >
+
+            <!-- Error Label -->
+
+            <TextView
+                android:id="@+id/reg_error"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#AA0000" />
+            <!-- User Name Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textColor="#372c24" />
+
+            <TextView
+                android:id="@+id/ud_un"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#AA0000" />
+
+            <!-- Password Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_pw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+            <!-- confirm Password Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_cpw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+            <!-- Blood Group Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Group"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/reg_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:entries="@array/bglist" />
+            <!-- Full NameLabel -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_fn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+            <!-- Mobile Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Telephone No."
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_tn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="phone"
+                android:singleLine="true" />
+            <!-- Email Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_em"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+            <!-- Dob Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="D.O.B"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_dob"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:hint="Double tap here to select"
+                android:inputType="text"
+                android:singleLine="true" />
+            <!-- Last Date of BD Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Date of Blood Donation"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_ld"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:hint="Double tap here or leave empty"
+                android:inputType="text"
+                android:singleLine="true" />
+            <!-- City Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="#372c24" />
+
+            <AutoCompleteTextView
+                android:id="@+id/reg_city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:hint="City(State)"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <!-- Register Button -->
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Register New Account" />
+            <!-- Link to Login Screen -->
+
+            <TextView
+                android:id="@+id/link_to_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dip"
+                android:layout_marginTop="40dip"
+                android:gravity="center"
+                android:text="Already has account! Login here"
+                android:textColor="#025f7c"
+                android:textSize="20dip" />
+        </LinearLayout>
+        <!-- Include Footer -->
+
+        <include
+            layout="@layout/footer_layout" />
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+
+</ScrollView>

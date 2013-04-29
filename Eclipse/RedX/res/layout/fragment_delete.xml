@@ -1,0 +1,24 @@
+<com.redx.dev.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >    
+    <Button
+        android:id="@+id/del_user"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/deleteuser"
+        android:text="Delete User" />
+ 
+    
+    <Button
+        android:id="@+id/del_camp"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/deletecamp"
+        android:text="Delete Camp" />
+    <Button
+        android:id="@+id/del_allcamp"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/deleteall"
+        android:text="Delete All Camp" />
+</com.redx.dev.DashboardLayout>

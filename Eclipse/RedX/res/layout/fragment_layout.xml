@@ -1,0 +1,50 @@
+<!-- Your package folder -->
+<com.redx.dev.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#ffffff" >
+    
+    <Button
+        android:id="@+id/ntw_up"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/updateprofile"
+        android:text="Update Profile" />
+ 
+    
+    <Button
+        android:id="@+id/ntw_ds"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/donorsearch"
+        android:text="Donor Search" />
+ 
+   
+    <Button
+        android:id="@+id/ntw_bc"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/sharecamp"
+        android:text="Share Camp" />
+ 
+    
+    <Button
+        android:id="@+id/ntw_sc"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/searchcamp"
+        android:text="Search Camp" />
+ 
+    
+    <Button
+        android:id="@+id/ntw_uc"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/updatecamp"
+        android:text="Update Camp" />
+ 
+    
+    <Button
+        android:id="@+id/ntw_yc"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/delete"
+        android:text="Delete" />
+ 
+</com.redx.dev.DashboardLayout>

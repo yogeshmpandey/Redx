@@ -1,0 +1,28 @@
+<com.redx.dev.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+    
+    <Button
+        android:id="@+id/don_ci"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/citywise"
+        android:text="CityWise Search" />
+ 
+    
+    <Button
+        android:id="@+id/don_st"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/statewise"
+        android:text="StateWise Search" />
+ 
+   
+    <Button
+        android:id="@+id/don_gps"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/gps"
+        android:text="GPS search" />
+ 
+</com.redx.dev.DashboardLayout>

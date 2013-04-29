@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.redx.dev"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="10" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:configChanges="orientation"
+            android:label="Register new Account" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:configChanges="orientation"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name=".Bntwrk"
+            android:configChanges="orientation"
+            android:label="Welcome to Red-X" >
+        </activity>
+        <activity
+            android:name=".SearchDonor"
+            android:configChanges="orientation"
+            android:label="Search Blood Donors" >
+        </activity>
+        <activity
+            android:name=".DonorCity"
+            android:configChanges="orientation"
+            android:label="Search Blood Donor"
+             >
+        </activity>
+        <activity
+            android:name=".DispCity"
+            android:configChanges="orientation"
+            android:label=" Blood Donors"
+             >
+        </activity>
+        <activity
+            android:name=".DonorState"
+            android:configChanges="orientation"
+            android:label="Search Blood Donor"
+            >
+        </activity>
+        <activity
+            android:name=".DispState"
+            android:configChanges="orientation"
+            android:label="Blood Donors"
+            >
+        </activity>
+        <activity
+            android:name=".CampCreate"
+            android:configChanges="orientation"
+            android:label="Create Blood Donation Camp" >
+        </activity>
+        <activity
+            android:name=".SearchCamp"
+            android:configChanges="orientation"
+            android:label="Search Blood Donation Camp"
+             >
+        </activity>
+        <activity
+            android:name=".CampCity"
+            android:configChanges="orientation"
+            android:label="Search Blood Donation Camp"
+           >
+        </activity>
+        <activity
+            android:name=".CampState"
+            android:configChanges="orientation"
+            android:label="Search Blood Donation Camp"
+            >
+        </activity>
+        <activity
+            android:name=".CampUser"
+            android:configChanges="orientation"
+            android:label="Search Blood Donation Camp"
+          >
+        </activity>
+        <activity
+            android:name=".DispCampCity"
+            android:configChanges="orientation"
+            android:label="Blood Donation Camp"
+             >
+        </activity>
+        <activity
+            android:name=".UpdateCamp"
+            android:configChanges="orientation"
+            android:label="Update Blood Donation Camp" >
+        </activity>
+        <activity
+            android:name=".UpdatePro"
+            android:configChanges="orientation"
+            android:label="Update Profile" >
+        </activity>
+        <activity
+            android:name=".DelUser"
+            android:configChanges="orientation"
+            android:label="Delete Profile" >
+        </activity>
+        <activity
+            android:name=".DelCamp"
+            android:configChanges="orientation"
+            android:label="Delete Camp" >
+        </activity>
+        <activity
+            android:name=".DonorGps"
+            android:configChanges="orientation"
+            android:label="Search Blood Donor"
+           >
+        </activity>
+    </application>
+
+</manifest>
